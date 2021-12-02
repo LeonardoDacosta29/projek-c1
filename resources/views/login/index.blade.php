@@ -5,7 +5,7 @@
 <div class="row justify-content-center">
     <div class="col-lg-4">
         @if (session()->has('sukses'))
-        <div class="alert alert-primary" role="alert">
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
             {{ session('sukses') }}
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
@@ -22,8 +22,8 @@
               <form action="/login" method="POST">
                 @csrf
                 <div class="form-floating">
-                    <input type="email" name="email" class="form-control @error('email')is-invalid @enderror" id="floatingInput" placeholder="name@example.com" required value="{{ old('email') }}">
-                    <label for="floatingInput">Email address</label>
+                    <input type="email" name="email" class="form-control @error('email')is-invalid @enderror" id="email" placeholder="name@example.com" required value="{{ old('email') }}">
+                    <label for="email">Email address</label>
                     @error('email')
                         <div class="invalid-feedback">
                             {{ $message }}

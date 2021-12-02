@@ -9,7 +9,7 @@
               <form action="/register" method="POST">
                 @csrf
                 <div class="form-floating">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Name" required value="{{ old('name') }}">
+                    <input type="text" name="name" class="form-control rounded-top @error('name') is-invalid @enderror" id="name" placeholder="Name" required value="{{ old('name') }}">
                     <label for="name">Name</label>
                     @error('name')
                         <div class="invalid-feedback">
