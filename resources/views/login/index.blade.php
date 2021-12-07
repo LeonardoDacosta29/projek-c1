@@ -31,7 +31,7 @@
                     @enderror
                 </div>
                 <div class="form-floating">
-                    <input type="password" class="form-control" id="Password" placeholder="Password">
+                    <input type="password" name="password" class="form-control" id="Password" placeholder="Password">
                     <label for="Password">Password</label>
                 </div>
                 <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
