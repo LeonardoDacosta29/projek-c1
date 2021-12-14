@@ -6,6 +6,9 @@
   <title>Projek | Dashboard</title>
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
+  {{-- summernote --}}
+  <link rel="stylesheet" href="/../../plugins/summernote/summernote-bs4.min.css">
+
   <!-- DataTables -->
   <link rel="stylesheet" href="/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
@@ -36,7 +39,7 @@
 
   <!-- Main Footer -->
   <footer class="main-footer">
-    <strong>Copyright &copy; 2021 - STMIK Pontianak.</strong>
+    <strong>Copyright &copy; 2021 - CM_dit.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
       <b>Version</b> Beta
@@ -63,6 +66,7 @@
 <script src="/plugins/jquery-mapael/maps/usa_states.min.js"></script>
 <!-- ChartJS -->
 <script src="/plugins/chart.js/Chart.min.js"></script>
+<script src="stylesheet" href="/../../plugins/summernote/summernote-bs4.min.css"></script>
 
 <!-- DataTables  & Plugins -->
 <script src="/plugins/datatables/jquery.dataTables.min.js"></script>
@@ -82,6 +86,12 @@
 <script src="/dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="/dist/js/pages/dashboard2.js"></script>
+<script>
+  $(function(){
+    //Summernote
+    $('#summernote').summernote()
+  })
+</script>
 
 <script>
     $(function () {
